@@ -3,10 +3,10 @@
 Integrate Whatsapp API with Node.js. Using Axios.
 
 # Routes
-http://localhost:3000/api/whatsapp/template
-http://localhost:3000/api/whatsapp/customTemplate
-http://localhost:3000/api/whatsapp/text
-http://localhost:3000/api/whatsapp/media
+* http://localhost:3000/api/whatsapp/template
+* http://localhost:3000/api/whatsapp/customTemplate
+* http://localhost:3000/api/whatsapp/text
+* http://localhost:3000/api/whatsapp/media
 
 
 json file in req.body 
@@ -32,5 +32,5 @@ $ npm install
 ```
 
 ```sh
-$ node index
+$ npm run start:prod
 ```
