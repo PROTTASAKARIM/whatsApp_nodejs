@@ -14,8 +14,13 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello World! This is WhatsApp by prottasa');
 });
 
+
+
 // Set the port using either the environment variable or a fallback default
 const port = process.env.PORT || 3000;  // Default to 3000 if PORT is not set in .env
+
+
+
 
 // Start the server and listen on the specified port
 app.listen(port, () => {
