@@ -34,3 +34,13 @@ $ npm install
 ```sh
 $ npm run start:prod
 ```
+
+# run for fb 
+first run a powersell 
+```
+npm run start:prod
+```
+then run this on gt bash
+```
+curl -X GET "localhost:3000/api/fb/webhook?hub.verify_token=prottasa2345&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe"
+```
