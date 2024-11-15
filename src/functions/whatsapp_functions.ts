@@ -40,14 +40,16 @@ const sendTemplateMessage = async (req: Request, res: Response): Promise<void> =
                 }
             }).then(response => {
                 console.log(`Media message sent to ${phone}:`, response.data);
+                res.status(200).json({ message: 'Messages sent to all phone numbers.' });
             })
             .catch(err => {
                 console.error('Error sending message:', err);
+                res.status(504).json({ message: 'Something went wrong ' });
+
             });
         }
 
         // Send success response after all messages are sent
-        res.status(200).json({ message: 'Messages sent to all phone numbers.' });
     } catch (error : unknown) {
         // Detailed error logging
         if (axios.isAxiosError(error)) {
